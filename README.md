@@ -1,7 +1,11 @@
 # python3 模拟 rabbitmq 生产和消费
+用于验证和测试rabbitmq集群的可用性，快速定位生产问题
+
+
 ## 执行环境
 ```
-需要在有安装 python3 的环境执行，且执行机可以正常访问到 rabbitmq 服务器。
+- 安装 Python3
+- 执行机可以正常访问到 rabbitmq 服务器
 ```
 ## 安装依赖
 ```shell
