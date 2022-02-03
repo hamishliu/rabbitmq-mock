@@ -1,4 +1,4 @@
-# python3 模拟 rabbitmq 生产和消费
+# Python3 模拟 RabbitMQ 生产和消费
 用于验证和测试rabbitmq集群的可用性，快速定位生产问题
 
 
