@@ -16,8 +16,8 @@ credentials = pika.PlainCredentials(username, password)
 connection = pika.BlockingConnection(pika.ConnectionParameters(host=hostname, port=port, credentials=credentials))
 # 创建频道
 channel = connection.channel()
-# 声明一个队列，用于接收消息，队列名字叫“消息队列1”
-channel.queue_declare(queue=queues_key)
+# 声明一个队列，用于接收消息，队列名字叫上面“填写的变量”,其中durable=True为开启消息持久化,为False或者不加此参数则不持久化
+channel.queue_declare(queue=queues_key, durable=True)
 
 start = 0
 while start < count:
